@@ -15,34 +15,23 @@ def string_to_int(num):
 def get_diff(num1, num2):
     return num1 - num2
 
-# num = '8512'
 num = get_input()
 diff_num = 0
 iterations = 0
-# desNum = reorder(num, True)
-# ascNum = reorder(num, False)
-# print (desNum, ascNum)
-# desNum =list_to_string(desNum)
-# ascNum =list_to_string(ascNum)
-# desNumInt = string_to_int(desNum)
-# ascNumInt = string_to_int(ascNum)
-# print(desNumInt,ascNumInt)
-# diffNum = get_diff(desNumInt, ascNumInt)
-# print('diffNum = ', diffNum)
 
 while diff_num != 6174:
     if iterations >= 10:
         break
     des_num = reorder(num, True)
     asc_num = reorder(num, False)
-    print ('des_num:',des_num, 'asc_num',asc_num)
+    # print ('des_num:',des_num, 'asc_num',asc_num)
     des_num_str =list_to_string(des_num)
     asc_num_str =list_to_string(asc_num)
     des_num_int = string_to_int(des_num_str)
     asc_num_int = string_to_int(asc_num_str)
-    print(des_num_int,asc_num_int)
+    # print(des_num_int,asc_num_int)
     diff_num = get_diff(des_num_int, asc_num_int)
-    print('diff_num = ', diff_num)
+    # print('diff_num = ', diff_num)
     if diff_num != 6174:
         num = str(diff_num)
         if len(num)<4:
