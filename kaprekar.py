@@ -16,6 +16,7 @@ def get_diff(num1, num2):
     return num1 - num2
 
 # num = '8512'
+print('Enter a number of exactly 4 digits, with at least 2 different digits')
 num = get_input()
 desNum = reorder(num, True)
 ascNum = reorder(num, False)

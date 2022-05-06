@@ -1,9 +1,8 @@
 # kaprekar.py
 
-# order descending
+Steps:
 
-# reverse
-
-# subtract
-
-# repeat until 6174
+- order descending
+- reverse
+- subtract
+- repeat until 6174
